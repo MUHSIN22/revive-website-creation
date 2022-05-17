@@ -1,0 +1,106 @@
+@import '/src/variables';
+
+.banner-container{
+    height: 100vh;
+    background: $primary-dark;
+    color: #fff;
+    display: flex;
+    position: relative;
+
+    .content-section{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 5%;
+    }
+    .banner-title{
+        font-size: 4rem;
+        font-weight: 800;
+        line-height: 60px;
+        span{
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+    }
+    .btn-discovery{
+        width: max-content;
+        background: $orange;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        margin: 5rem 0;
+        img{
+            margin-left: 1rem;
+        }
+    }
+    .image-section{
+        width: 40%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .banner-strip{
+        width: 100%;
+        height: 2rem;
+        background: $primary-light;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width:920px) {
+    .banner-container{
+        .banner-title{
+            font-size: 3rem;
+            line-height: 50px;
+            span{
+                font-size: 1.5rem;
+                line-height: 20px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:768px) {
+    .banner-container{
+        padding:0 3rem;
+        .content-section{
+            width: 100%;
+            position: relative;
+            z-index: 2;
+            padding: 0;
+        }
+        .image-section{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            box-shadow: inset 1000px 0 16px rgba(0,0,0,0.6);
+        }
+        .btn-discovery{
+            margin: 2rem 0;
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    .banner-container{
+        padding: 0 1rem;
+        .banner-title{
+            font-size: 2rem;
+            line-height: 31px;
+            span{
+                font-size: 1.1rem;
+            }
+        }
+        .banner-description{
+            font-size: 0.9rem;
+        }
+        .btn-discovery{
+            font-size: 0.9rem;
+            img{
+                object-fit: cover;
+            }
+        }
+    }
+}
