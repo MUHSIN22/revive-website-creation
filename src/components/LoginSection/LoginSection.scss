@@ -1,0 +1,65 @@
+@import '/src/variables';
+.login-section{
+    background: $primary-dark;
+    padding: 5rem 10%;
+    display: grid;
+    place-items: center;
+    
+    .login-card{
+        background: $primary-dark;
+        box-shadow: 1px 1px 16px rgba(0,0,0,0.1),-1px -1px 16px rgba(0,0,0,0.1);
+        padding: 2rem;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 42rem;
+    }
+    .login-input{
+        background: $secondary-dark;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        font-weight: 700;
+        border: none;
+        color: rgba(255, 255, 255,0.3);
+        padding: 1rem;
+        margin: 1rem 0;
+        &::placeholder{
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: rgba(255, 255, 255,0.3);
+        }
+    }
+    .upload-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: rgba(255, 255, 255,0.3);
+        margin-top: 1rem;
+    }
+    .btn-upload{
+        background: $secondary-dark;
+        border-radius: 10px;
+        padding: 0.5rem 1rem;
+        border: none;
+        color: #ffff;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .btn-login-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        margin-top: 2rem;
+    }
+    .btn-login{
+        font-size: 1rem;
+        font-weight: 700;
+        background: $orange;
+        color: #000;
+        padding: 0.5rem 2rem;
+        border-radius: 8px;
+        border: none;
+        color: #fff;
+    }
+}

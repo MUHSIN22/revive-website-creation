@@ -1,0 +1,15 @@
+@import '/src/variables';
+
+.main-footer{
+    background: $primary-dark;
+    padding: 2rem 10%;
+    .footer-wrapper{
+        width: 100%;
+        padding: 1.5rem;
+        color: #fff;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.405);
+        border-radius: 50px;
+        font-weight: 700;
+    }
+}   

@@ -1,0 +1,30 @@
+@import '/src/variables';
+
+.review-card{
+    border-radius: 30px;
+    background: $secondary-dark;
+    padding: 1rem;
+    .card-thumbnail{
+        width: 100%;
+        height: calc(100vw / 4);
+        object-fit: cover;
+        object-position: center;
+        border-radius: 30px;
+    }
+    .card-footer{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+    }
+    .btn-read{
+        background: $primary-dark;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-weight: 600;
+        border: none;
+        color: #fff;
+    }
+}

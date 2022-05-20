@@ -1,0 +1,48 @@
+@import '/src/variables';
+
+.join-section{
+    background: $primary-dark;
+    color: #fff;
+    display: flex;
+    .content-section{
+        width: 60%;
+        padding: 5% 5% 5% 10%;
+    }
+    .line-divider{
+        margin: 3rem 0;
+        border:2px solid $primary-light;
+        width: 50%;
+    }
+    .card-title{
+        margin-bottom: 2rem;
+    }
+    .description,
+    .card-description{
+        font-size: 1.2rem;
+    }
+    .card-section{
+        width: 40%;
+        display: grid;
+        place-items: center;
+        padding: 2rem;
+    }
+    .join-card{
+        background: $beage;
+        color: #000;
+        text-align: center;
+        padding: 2rem;
+        border-radius: 10px;
+        max-width: 30rem;
+    }
+    .btn-register{
+        color: #fff;
+        background: $orange;
+        padding: 0.5rem 3rem;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1rem;
+        border: none;
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+}
